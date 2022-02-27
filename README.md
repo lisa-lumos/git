@@ -74,8 +74,8 @@ Changes to be committed:
 Set up git with user name and email, also enable colored output in the terminal and use emacs:
 
 ```sh
-lisa@mac ~/D/g/git-learning (main)> git config --global user.name "lisa-lumos"
-lisa@mac ~/D/g/git-learning (main)> git config --global user.email "zjcty307@gmail.com"
+lisa@mac ~/D/g/git-learning (main)> git config --global user.name "my-user-name"
+lisa@mac ~/D/g/git-learning (main)> git config --global user.email "my-email@email.com"
 lisa@mac ~/D/g/git-learning (main)> git config --global color.ui true
 lisa@mac ~/D/g/git-learning (main)> git config --global core.editor emacs
 ```
@@ -88,7 +88,7 @@ Generate a new ssh key [ssh key doc]:
 
 
  [//]: # (These are reference links)
-    [dill]: <https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+    [ssh key doc]: <https://docs.github.com/en/authentication/connecting-to-github-with-ssh>
  
 
 
