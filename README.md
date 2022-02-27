@@ -80,7 +80,7 @@ lisa@mac ~/D/g/git-learning (main)> git config --global color.ui true
 lisa@mac ~/D/g/git-learning (main)> git config --global core.editor emacs
 ```
 
-Generate a new ssh key [ssh key doc]: 
+Generate a new ssh key references: [ssh key doc]. 
 
 
 
