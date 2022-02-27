@@ -1,7 +1,7 @@
 # Git Learning Notes
 
 ## Clone an existing repo
-To clone an existing repo that is created from web UI, first cd to the local destination folder: 
+To clone an existing repo that is created from web UI, first cd to the local destination folder, then: 
 
 ```sh
 lisa@mac ~/D/git> git clone https://github.com/lisa-lumos/git-learning.git
@@ -21,7 +21,7 @@ lisa@mac ~/D/g/git-learning (main)>
 ```
 ## Show status
 
-After modifying README.md file, to show the status of new changes: 
+After modifying README.md file locally, to show the status of new changes: 
 
 ```sh
 lisa@mac ~/D/g/git-learning (main)> git status
@@ -36,7 +36,8 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 lisa@mac ~/D/g/git-learning (main)> 
 ```
-After adding a new file `README_NEW.md` in folder `/Users/lisa/Desktop/git/git-learning`, show the status:
+
+After adding a new file `README_NEW.md` in local folder `/Users/lisa/Desktop/git/git-learning`, show the status:
 
 ```sh
 lisa@mac ~/D/g/git-learning (main)> git status
@@ -104,7 +105,7 @@ lisa@mac ~/D/g/git-learning (main)> git config --global color.ui true
 lisa@mac ~/D/g/git-learning (main)> git config --global core.editor emacs
 ```
 
-Generate a new ssh key (references: [ssh key documentation]). 
+Generate a new ssh key (references: [ssh key documentation]). Below indicates success: 
 
 ```sh
 lisa@mac ~/D/g/git-learning (main)> ssh -T git@github.com
@@ -147,7 +148,8 @@ Now the new changes can be seen on github website.
 
 ## Summary
 
-To sum up, here are all the commands by far: 
+To sum up, here are all the git commands by far: 
+
 ```sh
 git add .
 git commit -m "title of my commit" -m "description of my commit"
