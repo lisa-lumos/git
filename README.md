@@ -1,6 +1,8 @@
-# git-learning
+# Git Learning Notes
 
-## Clone
+## Clone an existing repo
+To clone an existing repo that is created from web UI, first cd to the local destination folder: 
+
 ```sh
 lisa@mac ~/D/git> git clone https://github.com/lisa-lumos/git-learning.git
 Cloning into 'git-learning'...
@@ -11,7 +13,7 @@ remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
 Receiving objects: 100% (6/6), done.
 ```
 
-After cloning is done, go to the repo folder: 
+After cloning is done, go to the cloned folder (repo): 
 
 ```sh
 lisa@mac ~/D/git> cd git-learning/
