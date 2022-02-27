@@ -143,6 +143,14 @@ To github.com:lisa-lumos/git-learning.git
 
 Now the new changes can be seen on github website. 
 
+## Summary
+
+To sum up, here are all the commands by far: 
+```sh
+git add .
+git commit -m "title of my commit" -m "description of my commit"
+git push origin main
+```
 
  [//]: # (These are reference links)
     [ssh key documentation]: <https://docs.github.com/en/authentication/connecting-to-github-with-ssh>
