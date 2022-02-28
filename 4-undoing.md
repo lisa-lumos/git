@@ -16,7 +16,7 @@ If committed unwanted changes accidentally with `git commit -m "XXX"`, could und
 $ git reset HEAD~1
 ```
 
-## Undo multiple commits, but to not change local file
+## Undo multiple commits, but not change local file
 
 If need to undo multiple commits, git doesn't have a quick pointer for these. But can see a log of all the commits, in reverse chronological order, with each commit there's a hash: 
 
@@ -30,7 +30,7 @@ With the hash `XXX` of the commit you want to revert to, just do:
 $ git reset XXX
 ```
 
-## To not only unstage, but to completely remove updates in local file
+## To not only unstage, but completely remove updates in local file
 
 ```sh
 $ git reset --hard XXX
