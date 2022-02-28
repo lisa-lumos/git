@@ -43,7 +43,7 @@ $ touch .gitignore
 $ vi .gitignore
 ```
 
-Inorder to pulish it online, need to go to Github web UI and create a repo `SQL-notes`, with nothing added inside. Next, copy the ssh link `git@github.com:lisa-lumos/SQL-notes.git` of this remote repo, and add this link as remote repository to git, and view it to confirm:
+To pulish it online, need to go to Github web UI and create a repo `SQL-notes`, with nothing added inside. Next, copy the ssh link `git@github.com:lisa-lumos/SQL-notes.git` of this remote repo, and add this link as remote repository to git, and view it to confirm:
 
 ```sh
 $ git remote add origin git@github.com:lisa-lumos/SQL-notes.git
@@ -66,7 +66,7 @@ To github.com:lisa-lumos/SQL-notes.git
  * [new branch]      main -> main
 ```
 
-If would like to no longer need to type `origin main` when using the `push` command, set it as default: 
+If would like to no longer type `origin main` when using the `push` command, set it as default: 
 
 ```sh
 $ git push -u origin main  
@@ -104,6 +104,7 @@ To sum up, here are all the git commands by far:
 $ git init
 $ git add .
 $ git commit -m "title of my commit"
+$ git remote add origin git@github.com:lisa-lumos/SQL-notes.git
 $ git push -u origin main  
 $ git push
 ```
