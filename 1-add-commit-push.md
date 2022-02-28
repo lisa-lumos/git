@@ -94,13 +94,13 @@ After doing this, you may fix the identity used for this commit with:
  create mode 100644 README_NEW.md
 ```
 
-(This step is optional) Set up git with user name and email, also enable colored output in the terminal and use emacs:
+(This step is optional) Set up git with user name and email, also enable colored output in the terminal and use textMate (need to go to TextMate preferences -> Teminal -> install shell support):
 
 ```sh
 $ git config --global user.name "my-user-name"
 $ git config --global user.email "my-email@email.com"
 $ git config --global color.ui true
-$ git config --global core.editor emacs
+$ git config --global core.editor "/usr/local/bin/mate -w"
 ```
 
 Generate a new ssh key (references: [ssh key documentation]). Below indicates success: 
