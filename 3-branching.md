@@ -55,7 +55,7 @@ Deleted branch feature-test (was 362a0ab).
 
 In this case, when you are working on your branch, you want to keep up with changes that has been made to main. 
 
-This would return a merge conflict if main branch has changed. 
+This would return a merge conflict if main branch has changed: 
 
 ```sh
 $ git merge master
