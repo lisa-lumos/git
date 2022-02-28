@@ -11,7 +11,7 @@ $ git branch
 * main
 ```
 
-##Create and switch to a new brach
+## Create and switch to a new brach
 
 ```sh
 $ git checkout -b feature-test
@@ -31,19 +31,37 @@ M	3-branching.md
 Switched to branch 'feature-test'
 ```
 
+## Push to the new branch
 
+```sh
+$ git push --set-upstream origin feature-test
+```
 
+## After merging this branch to main via UI
 
+```sh
+$ git pull
+```
+And the newly updated changes to main is pulled to local. 
 
+Then delete the branch, because it is already merged to main:
 
+```sh
+$ git branch -d feature-test
+Deleted branch feature-test (was 362a0ab).
+```
 
+## If multiple people collaborates
 
+In this case, when you are working on your branch, you want to keep up with changes that has been made to main. 
 
+This would return a merge conflict if main branch has changed. 
 
+```sh
+$ git merge master
+```
 
-
-
-
+The easy way is to accept changes in code editor. After fixing the merge conflict, need to commit. 
 
 
 
