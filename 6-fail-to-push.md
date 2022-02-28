@@ -64,6 +64,8 @@ HEAD indicates current head pointer, the hash indicates changes from remote repo
 Manually merge both: 
 
 ```
+XXX...
+
 Added from local machine. 
 Added from web UI. 
 ```
