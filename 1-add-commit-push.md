@@ -94,6 +94,12 @@ After doing this, you may fix the identity used for this commit with:
  create mode 100644 README_NEW.md
 ```
 
+Could put `add` and `commit` into one command: 
+
+```sh
+git commit -am  "XXX"
+```
+
 (This step is optional) Set up git with user name and email, also enable colored output in the terminal and use textMate (need to go to TextMate preferences -> Teminal -> install shell support):
 
 ```sh
