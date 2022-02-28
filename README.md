@@ -74,7 +74,7 @@ Changes to be committed:
 
 ## Commit changes
 
-Commit changes locally: 
+To commit changes locally: 
 
 ```sh
 lisa@mac ~/D/g/git-learning (main)> git commit -m "title of my commit" -m "description of my commit"
