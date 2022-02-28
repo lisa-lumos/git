@@ -59,7 +59,7 @@ Added from web UI.
 >>>>>>> 657f0ee01fc3a9ac7e828bef4ac54a4fad412c34
 ```
 
-HEAD indicates current head pointer, the hash indicates changes from remote repo. 
+`HEAD` indicates current head pointer, the `=======` indicates changes from remote repo. 
 
 Manually merge both: 
 
@@ -70,7 +70,7 @@ Added from local machine.
 Added from web UI. 
 ```
 
-And then could commit and push. 
+And then could commit and push with no issues. 
 
 ```sh
 $ git add .
