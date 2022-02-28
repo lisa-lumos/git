@@ -4,7 +4,7 @@
 To clone an existing repo that is created from web UI, first cd to the local destination folder, then: 
 
 ```sh
-lisa@mac ~/D/git> git clone https://github.com/lisa-lumos/git-learning.git
+$ git clone https://github.com/lisa-lumos/git-learning.git
 Cloning into 'git-learning'...
 remote: Enumerating objects: 6, done.
 remote: Counting objects: 100% (6/6), done.
@@ -16,15 +16,15 @@ Receiving objects: 100% (6/6), done.
 After cloning is done, go to the cloned folder (repo): 
 
 ```sh
-lisa@mac ~/D/git> cd git-learning/
-lisa@mac ~/D/g/git-learning (main)>
+$ cd git-learning/
 ```
+
 ## Show status
 
 After modifying README.md file locally, to show the status of new changes: 
 
 ```sh
-lisa@mac ~/D/g/git-learning (main)> git status
+$ git status
 On branch main
 Your branch is up to date with 'origin/main'.
 
@@ -34,13 +34,12 @@ Changes not staged for commit:
 	modified:   README.md
 
 no changes added to commit (use "git add" and/or "git commit -a")
-lisa@mac ~/D/g/git-learning (main)> 
 ```
 
 After adding a new file `README_NEW.md` in local folder `/Users/lisa/Desktop/git/git-learning`, show the status:
 
 ```sh
-lisa@mac ~/D/g/git-learning (main)> git status
+$ git status
 On branch main
 Your branch is up to date with 'origin/main'.
 
@@ -54,14 +53,13 @@ Untracked files:
 	README_NEW.md
 
 no changes added to commit (use "git add" and/or "git commit -a")
-
 ```
 
 To let git know (begin to track) this new file, or all the files in current directory, run: 
 
 ```sh
-lisa@mac ~/D/g/git-learning (main)> git add .
-lisa@mac ~/D/g/git-learning (main)> git status
+$ git add .
+$ git status
 On branch main
 Your branch is up to date with 'origin/main'.
 
@@ -77,7 +75,7 @@ Changes to be committed:
 To commit changes locally: 
 
 ```sh
-lisa@mac ~/D/g/git-learning (main)> git commit -m "title of my commit" -m "description of my commit"
+$ git commit -m "title of my commit" -m "description of my commit"
 [main 615cd52] title of my commit
  Committer: XXXX <XXX@XXX.local>
 Your name and email address were configured automatically based
@@ -99,29 +97,29 @@ After doing this, you may fix the identity used for this commit with:
 (This step is optional) Set up git with user name and email, also enable colored output in the terminal and use emacs:
 
 ```sh
-lisa@mac ~/D/g/git-learning (main)> git config --global user.name "my-user-name"
-lisa@mac ~/D/g/git-learning (main)> git config --global user.email "my-email@email.com"
-lisa@mac ~/D/g/git-learning (main)> git config --global color.ui true
-lisa@mac ~/D/g/git-learning (main)> git config --global core.editor emacs
+$ git config --global user.name "my-user-name"
+$ git config --global user.email "my-email@email.com"
+$ git config --global color.ui true
+$ git config --global core.editor emacs
 ```
 
 Generate a new ssh key (references: [ssh key documentation]). Below indicates success: 
 
 ```sh
-lisa@mac ~/D/g/git-learning (main)> ssh -T git@github.com
+$ ssh -T git@github.com
 Hi lisa-lumos! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
 Reset origin url to avoid being asked username and password (references [remote repo documentation]):
 
 ```sh
-lisa@mac ~/D/g/git-learning (main)> git remote set-url origin git@github.com:lisa-lumos/git-learning.git
+$ git remote set-url origin git@github.com:lisa-lumos/git-learning.git
 ```
 
 Otherwise have the following problem: 
 
 ```sh
-lisa@mac ~/D/g/git-learning (main)> git push origin main
+$ git push origin main
 Username for 'https://github.com': lisa-lumos
 Password for 'https://lisa-lumos@github.com': 
 remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
@@ -132,7 +130,7 @@ fatal: Authentication failed for 'https://github.com/lisa-lumos/git-learning.git
 To push to remote repository: 
 
 ```sh
-lisa@mac ~/D/g/git-learning (main)> git push origin main
+$ git push origin main
 Enumerating objects: 10, done.
 Counting objects: 100% (10/10), done.
 Delta compression using up to 8 threads
@@ -151,10 +149,10 @@ Now the new changes can be seen on github website.
 To sum up, here are all the git commands by far: 
 
 ```sh
-git clone https://github.com/lisa-lumos/git-learning.git
-git add .
-git commit -m "title of my commit" -m "description of my commit"
-git push origin main
+$ git clone https://github.com/lisa-lumos/git-learning.git
+$ git add .
+$ git commit -m "title of my commit" -m "description of my commit"
+$ git push origin main
 ```
 
  [//]: # (These are reference links)

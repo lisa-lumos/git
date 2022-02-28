@@ -14,7 +14,7 @@ drwxr-xr-x@ 5 lisa  staff  160 Feb 27 18:33 ..
 -rw-r--r--@ 1 lisa  staff   35 Feb 27 18:48 SQL-notes-Part 1.md
 ```
 
-Can see that there's no .git folder. So need to create it: 
+Can see that there's no .git folder. So need to create it with `init`: 
 
 ```sh
 lisa@mac SQL-notes % git init
@@ -29,15 +29,15 @@ hint: 'development'. The just-created branch can be renamed via this command:
 hint: 
 hint: 	git branch -m <name>
 Initialized empty Git repository in /Users/lisa/Desktop/git/SQL-notes/.git/
+
 lisa@mac SQL-notes % ls -la  
 total 8
 drwxr-xr-x  4 lisa  staff  128 Feb 27 19:48 .
 drwxr-xr-x@ 5 lisa  staff  160 Feb 27 18:33 ..
 drwxr-xr-x  9 lisa  staff  288 Feb 27 19:48 .git
 -rw-r--r--@ 1 lisa  staff   35 Feb 27 18:48 SQL-notes-Part 1.md
+
 lisa@mac SQL-notes % git config --global init.defaultBranch main   
-lisa@mac SQL-notes % git init                                   
-Reinitialized existing Git repository in /Users/lisa/Desktop/git/SQL-notes/.git/
 lisa@mac SQL-notes % git branch -m main
 lisa@mac SQL-notes % touch .gitignore
 lisa@mac SQL-notes % vi .gitignore
