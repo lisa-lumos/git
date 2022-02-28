@@ -71,7 +71,7 @@ In this case, when you are working on your branch, you want to keep up with chan
 This would return a merge conflict if main branch has changed: 
 
 ```console
-$ git merge master
+$ git merge main
 ```
 
 The easy way is to accept changes in code editor. After fixing the merge conflict, need to commit. 
