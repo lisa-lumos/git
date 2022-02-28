@@ -5,7 +5,7 @@ Git is a distributed version control system. It allows us to track changes over 
 To make sure git is intalled: 
 
 ```console
-$git --version
+$ git --version
 git version 2.32.0 (Apple Git-132)
 ```
 
@@ -89,7 +89,7 @@ In a large project, you might have hundreds of changes across dozens of files, a
 
 ## Commit changes
 
-`Commit` commits all files that is previously added to stage with a message. 
+`commit` commits all files that is previously added to stage with a message. 
 
 To commit changes locally: 
 
@@ -116,7 +116,7 @@ After doing this, you may fix the identity used for this commit with:
 Could also put `add` and `commit` into one command: 
 
 ```console
-git commit -am  "XXX"
+$ git commit -am  "XXX"
 ```
 
 If you modified 3 files A, B and C, and would like to have changes in A and B into one commit, and changes in C in a different commit, then you have to do two rounds of [add and commit] for each commit. You can check all commits via `git log`.
@@ -125,7 +125,7 @@ If you modified 3 files A, B and C, and would like to have changes in A and B in
 
 You can have multiple commits before you push them to remote repo. 
 
-*(This step is optional)* Set up git with user name and email (only used to track who made what changes), also enable colored output in the terminal and use textMate (need to go to TextMate preferences -> Teminal -> install shell support):
+*(This step is optional)* Set up git with user name and email (only used to track who made what changes), also enable colored output in the terminal and use textMate (need to firstly go to TextMate preferences -> Teminal -> install shell support):
 
 ```console
 $ git config --global user.name "my-user-name"
@@ -177,7 +177,7 @@ Now the new changes can be seen on github website.
 
 ## Summary
 
-To sum up, here are all the git commands by far: 
+To sum up, here are the git commands by far: 
 
 ```console
 $ git clone https://github.com/lisa-lumos/git-learning.git
