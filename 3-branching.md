@@ -13,6 +13,8 @@ $ git branch
 
 ## Create and switch to a new brach
 
+`git checkout -b feature-test` or `git branch feature-test` both work:
+
 ```console
 $ git checkout -b feature-test
 Switched to a new branch 'feature-test'
@@ -37,7 +39,18 @@ Switched to branch 'feature-test'
 $ git push --set-upstream origin feature-test
 ```
 
-## After merging this branch to main via UI
+## Merge this branch to main
+
+When at master branch, 
+
+```console 
+$ git merge feature-test
+$ git log
+```
+
+`git log` now shows commits to the branch. 
+
+## After merging this branch to main
 
 ```console
 $ git pull
