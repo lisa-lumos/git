@@ -14,7 +14,7 @@ drwxr-xr-x@ 5 lisa  staff  160 Feb 27 18:33 ..
 -rw-r--r--@ 1 lisa  staff   35 Feb 27 18:48 SQL-notes-Part 1.md
 ```
 
-Can see that there's no `.git` folder. So need to create it with `init`: 
+Can see that there's no `.git` folder. So need to create it with `git init`: 
 
 ```console
 $ git init
@@ -98,7 +98,7 @@ To github.com:lisa-lumos/git-learning.git
 
 ## Summary
 
-To sum up, here are all the git commands by far: 
+To sum up, here are the git commands by far: 
 
 ```console
 $ git init
