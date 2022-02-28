@@ -70,8 +70,11 @@ Added from web UI.
 
 And then could commit and push. 
 
-
-
+```sh
+$ git add .
+$ git commit -m "XXX"
+$ git push
+```
 
 
 
