@@ -4,7 +4,7 @@
 
 If create a new folder `SQL-notes`, and show all files in this dir:
 
-```sh
+```console
 $ pwd
 /Users/lisa/Desktop/git/SQL-notes
 $ ls -la
@@ -14,9 +14,9 @@ drwxr-xr-x@ 5 lisa  staff  160 Feb 27 18:33 ..
 -rw-r--r--@ 1 lisa  staff   35 Feb 27 18:48 SQL-notes-Part 1.md
 ```
 
-Can see that there's no .git folder. So need to create it with `init`: 
+Can see that there's no `.git` folder. So need to create it with `init`: 
 
-```sh
+```console
 $ git init
 hint: Using 'master' as the name for the initial branch. This default branch name
 hint: is subject to change. To configure the initial branch name to use in all
@@ -45,7 +45,7 @@ $ vi .gitignore
 
 To pulish it online, need to go to Github web UI and create a repo `SQL-notes`, with nothing added inside. Next, copy the ssh link `git@github.com:lisa-lumos/SQL-notes.git` of this remote repo, and add this link as remote repository to git, and view it to confirm:
 
-```sh
+```console
 $ git remote add origin git@github.com:lisa-lumos/SQL-notes.git
 $ git remote -v
 origin	git@github.com:lisa-lumos/SQL-notes.git (fetch)
@@ -54,7 +54,7 @@ origin	git@github.com:lisa-lumos/SQL-notes.git (push)
 
 Now can push this local repo to Github: 
 
-```sh
+```console
 $ git push origin main
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
@@ -68,7 +68,7 @@ To github.com:lisa-lumos/SQL-notes.git
 
 If would like to no longer type `origin main` when using the `push` command, set it as default: 
 
-```sh
+```console
 $ git push -u origin main  
 $ git push
 Enumerating objects: 5, done.
@@ -83,7 +83,7 @@ To github.com:lisa-lumos/SQL-notes.git
 
 To force a push: 
 
-```sh
+```console
 $ git push -f
 Enumerating objects: 45, done.
 Counting objects: 100% (45/45), done.
@@ -100,7 +100,7 @@ To github.com:lisa-lumos/git-learning.git
 
 To sum up, here are all the git commands by far: 
 
-```sh
+```console
 $ git init
 $ git add .
 $ git commit -m "title of my commit"

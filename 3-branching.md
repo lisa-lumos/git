@@ -6,14 +6,14 @@ Branch can be used as a sandbox (for new features, hot fixes, etc), later can be
 
 The \* in front of main indicates that main is my current branch. 
 
-```sh
+```console
 $ git branch
 * main
 ```
 
 ## Create and switch to a new brach
 
-```sh
+```console
 $ git checkout -b feature-test
 Switched to a new branch 'feature-test'
 
@@ -33,20 +33,20 @@ Switched to branch 'feature-test'
 
 ## Push to the new branch
 
-```sh
+```console
 $ git push --set-upstream origin feature-test
 ```
 
 ## After merging this branch to main via UI
 
-```sh
+```console
 $ git pull
 ```
 And the newly updated changes to main is pulled to local. 
 
 Then delete the branch, because it is already merged to main:
 
-```sh
+```console
 $ git branch -d feature-test
 Deleted branch feature-test (was 362a0ab).
 ```
@@ -57,7 +57,7 @@ In this case, when you are working on your branch, you want to keep up with chan
 
 This would return a merge conflict if main branch has changed: 
 
-```sh
+```console
 $ git merge master
 ```
 
