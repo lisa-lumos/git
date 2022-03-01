@@ -10,7 +10,7 @@ $ git reset
 
 ## Undo a commit
 
-If committed unwanted changes accidentally with `git commit -m "XXX"`, could undo the [stage and commit] by go back one step before `HEAD` (pointer to the last commit): 
+If committed unwanted changes accidentally with `git commit -m "XXX"`, could undo the [stage and commit] by going back one step before `HEAD` (pointer to the last commit): 
 
 ```console
 $ git reset HEAD~1
