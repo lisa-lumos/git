@@ -134,14 +134,17 @@ $ git config --global color.ui true
 $ git config --global core.editor "/usr/local/bin/mate -w"
 ```
 
-Generate a new ssh key (references: [ssh key documentation]). Below indicates success: 
+Generate a new ssh key 
+(references: [ssh key documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)). 
+Below indicates success: 
 
 ```console
 $ ssh -T git@github.com
 Hi lisa-lumos! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-Reset origin url to avoid being asked username and password (references [remote repo documentation]):
+Reset origin url to avoid being asked username and password 
+(references [remote repo documentation](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#about-remote-repositories)):
 
 ```console
 $ git remote set-url origin git@github.com:lisa-lumos/git-learning.git
@@ -185,10 +188,6 @@ $ git add .
 $ git commit -m "title of my commit" -m "description of my commit"
 $ git push origin main
 ```
-
- [//]: # (These are reference links)
-    [ssh key documentation]: <https://docs.github.com/en/authentication/connecting-to-github-with-ssh>
-	[remote repo documentation]: <https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#about-remote-repositories>
  
 
 
