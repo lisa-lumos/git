@@ -1,10 +1,7 @@
 # Git Learning Notes - Part 6
-
 ## error: failed to push some refs to XXX
-
 When multiple people work on the same repo, e.g., person A and B pulled from the same repo at the same time, and if person A added a new line into README.md and pushed to remote repo, and person B added a different new line into the same file locally, is person B push to remote repo, there will be an error: 
-
-```console
+```sh
 $ git push
 To github.com:lisa-lumos/git-learning.git
  ! [rejected]        main -> main (fetch first)
@@ -17,8 +14,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
 
 To resolve the error, need to run a `pull` request and integrate remote changes and local changes together: 
-
-```console
+```sh
 $ git pull
 remote: Enumerating objects: 5, done.
 remote: Counting objects: 100% (5/5), done.
@@ -45,7 +41,6 @@ Automatic merge failed; fix conflicts and then commit the result.
 ```
 
 When I go to my code editor, I see: 
-
 ```
 XXX...
 
@@ -62,7 +57,6 @@ Added from web UI.
 `HEAD` indicates current head pointer, the `=======` indicates changes from remote repo. 
 
 Manually merge both: 
-
 ```
 XXX...
 
@@ -71,22 +65,8 @@ Added from web UI.
 ```
 
 And then could commit and push with no issues. 
-
-```console
+```sh
 $ git add .
 $ git commit -m "XXX"
 $ git push
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-

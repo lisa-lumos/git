@@ -1,10 +1,7 @@
 # Git Learning Notes - Part 2
-
 ## If create a repo locally instead of cloning 
-
 If create a new folder `SQL-notes`, and show all files in this dir:
-
-```console
+```sh
 $ pwd
 /Users/lisa/Desktop/git/SQL-notes
 $ ls -la
@@ -15,8 +12,7 @@ drwxr-xr-x@ 5 lisa  staff  160 Feb 27 18:33 ..
 ```
 
 Can see that there's no `.git` folder. So need to create it with `git init`: 
-
-```console
+```sh
 $ git init
 hint: Using 'master' as the name for the initial branch. This default branch name
 hint: is subject to change. To configure the initial branch name to use in all
@@ -43,9 +39,8 @@ $ touch .gitignore
 $ vi .gitignore
 ```
 
-To pulish it online, need to go to Github web UI and create a repo `SQL-notes`, with nothing added inside. Next, copy the ssh link `git@github.com:lisa-lumos/SQL-notes.git` of this remote repo, and add this link as remote repository to git, and view it to confirm:
-
-```console
+To publish it online, need to go to Github web UI and create a repo `SQL-notes`, with nothing added inside. Next, copy the ssh link `git@github.com:lisa-lumos/SQL-notes.git` of this remote repo, and add this link as remote repository to git, and view it to confirm:
+```sh
 $ git remote add origin git@github.com:lisa-lumos/SQL-notes.git
 $ git remote -v
 origin	git@github.com:lisa-lumos/SQL-notes.git (fetch)
@@ -53,8 +48,7 @@ origin	git@github.com:lisa-lumos/SQL-notes.git (push)
 ```
 
 Now can push this local repo to Github: 
-
-```console
+```sh
 $ git push origin main
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
@@ -67,8 +61,7 @@ To github.com:lisa-lumos/SQL-notes.git
 ```
 
 If would like to no longer type `origin main` when using the `push` command, set it as default: 
-
-```console
+```sh
 $ git push -u origin main  
 $ git push
 Enumerating objects: 5, done.
@@ -82,8 +75,7 @@ To github.com:lisa-lumos/SQL-notes.git
 ```
 
 To force a push: 
-
-```console
+```sh
 $ git push -f
 Enumerating objects: 45, done.
 Counting objects: 100% (45/45), done.
@@ -97,10 +89,8 @@ To github.com:lisa-lumos/git-learning.git
 ```
 
 ## Summary
-
 To sum up, here are the git commands by far: 
-
-```console
+```sh
 $ git init
 $ git add .
 $ git commit -m "title of my commit"
@@ -108,17 +98,3 @@ $ git remote add origin git@github.com:lisa-lumos/SQL-notes.git
 $ git push -u origin main  
 $ git push
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
