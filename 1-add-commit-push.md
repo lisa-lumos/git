@@ -1,21 +1,17 @@
 # Git Learning Notes - Part 1
-
 Git is a distributed version control system. It allows us to track changes over time, over users, over project files. GitHub is a cloud-based hosting service that lets you manage Git repositories. Github relies on git. 
 
-To make sure git is intalled: 
-
-```console
+To make sure git is installed: 
+```shell
 $ git --version
 git version 2.32.0 (Apple Git-132)
 ```
 
 A git repository is a container for a project that is tracked by git. 
 
-
 ## Clone an existing repo
 To clone an existing repo that is created from web UI, first cd to the local destination folder, then: 
-
-```console
+```shell
 $ git clone https://github.com/lisa-lumos/git-learning.git
 Cloning into 'git-learning'...
 remote: Enumerating objects: 6, done.
@@ -26,16 +22,13 @@ Receiving objects: 100% (6/6), done.
 ```
 
 After cloning is done, go to the cloned folder (repo): 
-
-```console
+```shell
 $ cd git-learning/
 ```
 
 ## Show status
-
 After modifying README.md file locally, to show the status of new changes: 
-
-```console
+```shell
 $ git status
 On branch main
 Your branch is up to date with 'origin/main'.
@@ -49,8 +42,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
 After adding a new file `README_NEW.md` in local folder `/Users/lisa/Desktop/git/git-learning`, show the status:
-
-```console
+```shell
 $ git status
 On branch main
 Your branch is up to date with 'origin/main'.
@@ -68,10 +60,8 @@ no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
 ## Stage changes to file(s)
-
 To let git know (begin to track) this new file `git add <filename you want to add>`, or all the files in current directory `it add .`, run: 
-
-```console
+```shell
 $ git add <filenames you want to add, with space in between filenames>
 $ git add .
 $ git status
@@ -86,14 +76,11 @@ Changes to be committed:
 
 In a large project, you might have hundreds of changes across dozens of files, and you only want to make a small commit only on one particular file, selectively. 
 
-
 ## Commit changes
-
 `commit` commits all files that is previously added to stage with a message. 
 
 To commit changes locally: 
-
-```console
+```shell
 $ git commit -m "title of my commit" -m "description of my commit"
 [main 615cd52] title of my commit
  Committer: XXXX <XXX@XXX.local>
@@ -114,20 +101,17 @@ After doing this, you may fix the identity used for this commit with:
 ```
 
 Could also put `add` and `commit` into one command: 
-
-```console
+```shell
 $ git commit -am  "XXX"
 ```
 
 If you modified 3 files A, B and C, and would like to have changes in A and B into one commit, and changes in C in a different commit, then you have to do two rounds of [add and commit] for each commit. You can check all commits via `git log`.
 
 ## Push changes to remote repo
-
 You can have multiple commits before you push them to remote repo. 
 
 *(This step is optional)* Set up git with user name and email (only used to track who made what changes), also enable colored output in the terminal and use textMate (need to firstly go to TextMate preferences -> Teminal -> install shell support):
-
-```console
+```shell
 $ git config --global user.name "my-user-name"
 $ git config --global user.email "my-email@email.com"
 $ git config --global color.ui true
@@ -137,22 +121,19 @@ $ git config --global core.editor "/usr/local/bin/mate -w"
 Generate a new ssh key 
 (references: [ssh key documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)). 
 Below indicates success: 
-
-```console
+```shell
 $ ssh -T git@github.com
 Hi lisa-lumos! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
 Reset origin url to avoid being asked username and password 
 (references [remote repo documentation](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#about-remote-repositories)):
-
-```console
+```shell
 $ git remote set-url origin git@github.com:lisa-lumos/git-learning.git
 ```
 
 Otherwise have the following problem: 
-
-```console
+```shell
 $ git push origin main
 Username for 'https://github.com': lisa-lumos
 Password for 'https://lisa-lumos@github.com': 
@@ -162,8 +143,7 @@ fatal: Authentication failed for 'https://github.com/lisa-lumos/git-learning.git
 ```
 
 To push to remote repository: 
-
-```console
+```shell
 $ git push origin main
 Enumerating objects: 10, done.
 Counting objects: 100% (10/10), done.
@@ -179,10 +159,8 @@ To github.com:lisa-lumos/git-learning.git
 Now the new changes can be seen on github website. 
 
 ## Summary
-
 To sum up, here are the git commands by far: 
-
-```console
+```shell
 $ git clone https://github.com/lisa-lumos/git-learning.git
 $ git add .
 $ git commit -m "title of my commit" -m "description of my commit"
