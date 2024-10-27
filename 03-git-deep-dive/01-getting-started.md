@@ -36,12 +36,60 @@ The basic Git workflow goes like this:
 The command line is the only place you can run all Git commands - most of the GUIs implement only a partial subset of Git functionality for simplicity. Also, all users will have the command-line tools installed and available.
 
 ## 1.5 Installing Git
-
-
+```sh
+# If you don't have it installed already, it will prompt you to install it.
+git --version
+```
 
 ## 1.6 First-Time Git Setup
+Customize your Git environment. You should have to do these things only once on any given computer; they'll stick around between upgrades. You can also change them at any time by running through the commands again.
 
+Git comes with `git config` tool that lets you get/set config variables that control how Git looks/operates. These variables can be stored in 3 diff files:
+1. `[path]/etc/gitconfig` file: Contains values applied to every user on the system and all their repos. Need to pass the option `--system` to r/w from this file. Need admin/su privilege.
+2. `~/.gitconfig` or` ~/.config/git/config` file. User-specific. Need to pass the option `--global ` to r/w from this file. It affects all repos for the user.
+3. `.git/config` file in the Git repo. Specific to that single repository. Optionally pass the option `--local` to r/w from this file, because it is the default. Need to cd to this repo first. 
 
+Each level overrides values in the previous level. 
+
+You can view all of your settings and where they are coming from using:
+```sh
+$ git config --list --show-origin
+```
+
+The first thing you should do when you install Git is to set your user name and email address. This is important, because every Git commit uses this information, and it's immutably baked into the commits you start creating:
+```sh
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+```
+Many of the GUI tools will help you do this when you first run them.
+
+You can configure the default text editor that will be used when Git needs you to type in a message. If not configured, Git uses your system's default editor. If you want to use a different text editor, such as Emacs:
+```sh
+$ git config --global core.editor emacs
+```
+
+By default, Git will create a branch called `master` when you create a new repo with git init. From Git version 2.28 onwards, you can set a different name for the initial branch. To set `main` as the default branch name:
+```sh
+$ git config --global init.defaultBranch main
+```
+
+To check your configs:
+```sh
+$ git config --list
+# user.name=John Doe
+# user.email=johndoe@example.com
+# color.status=auto
+# color.branch=auto
+# color.interactive=auto
+# color.diff=auto
+# ...
+```
+
+To check what Git thinks a specific key's value is::
+```sh
+$ git config user.name
+# John Doe
+```
 
 ## 1.7 Getting Help
 
