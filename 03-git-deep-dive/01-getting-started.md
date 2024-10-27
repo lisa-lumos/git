@@ -33,8 +33,7 @@ The basic Git workflow goes like this:
 3. You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.
 
 ## 1.4 The Command Line
-
-
+The command line is the only place you can run all Git commands - most of the GUIs implement only a partial subset of Git functionality for simplicity. Also, all users will have the command-line tools installed and available.
 
 ## 1.5 Installing Git
 
