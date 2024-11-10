@@ -92,10 +92,7 @@ $ git config user.name
 ```
 
 ## 1.7 Getting Help
-
-
+skip
 
 ## 1.8 Summary
-
-
-
+skip
