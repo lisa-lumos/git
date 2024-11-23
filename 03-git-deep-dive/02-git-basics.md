@@ -90,6 +90,57 @@ $ git status
 
 `git add` is more like "add precisely this content to the next commit". Git stages a file exactly as it is when you run the `git add` command, not the modified version after you run the command.
 
+Short status. New files that have been added to the staging area have an "A", modified files have an "M", new files that aren't tracked have a "??". "MM" means mixed stats, such as modified then staged then modified again.  
+```sh
+$ git status -s
+#  M README
+# MM Rakefile
+# A  lib/git.rb
+# M  lib/simplegit.rb
+# ?? LICENSE.txt
+```
+
+Setting up a ".gitignore" file for your new repository before you get going is generally a good idea, so you don't accidentally commit files that you don't want in your Git repo. Ignoring files ".gitignore":
+```sh
+*.[oa] # ignore any files ending in .o or .a
+*~ # ignore all files whose names end with a tilde
+```
+
+The rules for the patterns you can put in the ".gitignore" file:
+- Blank lines, or lines starting with `#` are ignored.
+- Standard glob patterns work, and will be applied recursively throughout the entire working tree.
+- To avoid recursivity, start patterns with `/`.
+- To specify a directory, end patterns with `/` .
+- Negate a pattern by starting it with `!`.
+
+Glob patterns are like simplified regex that shells use:
+- A `*` matches zero or more characters; 
+- `[abc]` matches any character inside the brackets (in this case a, b, or c);
+- `?` matches a single character; 
+- brackets enclosing characters separated by a hyphen `[0-9]` matches any character between them (in this case 0 through 9). 
+- `**` matches nested directories; `a/**/z` would match `a/z`, `a/b/z`, `a/b/c/z`, and so on.
+
+More examples:
+```sh
+# ignore all .a files
+*.a
+
+# but do track lib.a, even though you're ignoring .a files above
+!lib.a
+
+# only ignore the TODO file in the current directory, not subdir/TODO
+/TODO
+
+# ignore all files in any directory named build
+build/
+
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+
+# ignore all .pdf files in the doc/ directory and any of its subdirectories
+doc/**/*.pdf
+
+```
 
 
 
