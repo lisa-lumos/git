@@ -142,9 +142,9 @@ doc/**/*.pdf
 
 ```
 
+To see what you've changed but not yet staged, use `git diff`. If you've staged all of your changes, git diff will give you no output. `git diff --staged` to see what you have staged. 
 
-
-
+To commit, run `git commit -m "my test commit"`. Every time you perform a commit, you're recording a snapshot of your project that you can revert to, or compare to later.
 
 
 
