@@ -146,7 +146,9 @@ To see what you've changed but not yet staged, use `git diff`. If you've staged 
 
 To commit, run `git commit -m "my test commit"`. Every time you perform a commit, you're recording a snapshot of your project that you can revert to, or compare to later.
 
+To remove a file from git tracking and from the disk, run `git rm my_file.txt`. To remove a file from git tracking but keep it in the disk, run `git rm --cached my_file.txt`. 
 
+To rename a file, run `git mv file_from file_to`. 
 
 ## 2.3 Viewing the Commit History
 
