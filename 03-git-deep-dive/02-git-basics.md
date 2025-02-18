@@ -151,8 +151,24 @@ To remove a file from git tracking and from the disk, run `git rm my_file.txt`. 
 To rename a file, run `git mv file_from file_to`. 
 
 ## 2.3 Viewing the Commit History
+```sh
+# list of commits, newest first
+git log
 
+# list last 2 commits, show the difference
+git log --patch -2
 
+# see abbreviated stats for each commit (num of insertions, deletions for each file)
+git log --stat
+
+# list each commit in 1 line, with its commit message
+git log --pretty=oneline
+
+git log --since=2.weeks
+
+git log -- path/to/file
+
+```
 
 ## 2.4 Undoing Things
 
