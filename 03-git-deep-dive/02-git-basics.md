@@ -171,8 +171,24 @@ git log -- path/to/file
 ```
 
 ## 2.4 Undoing Things
+```sh
+# make changes to a prv commit
+# Only amend commits that are still local and have not been pushed somewhere. 
+# Amending previously pushed commits and force pushing the branch will cause problems for your collaborators.
+git commit --amend
 
+# unstaging a staged file
+git reset HEAD file_name_to_unstage.txt
+git restore --staged file_name_to_unstage.txt
 
+# unmodifying a modified file, to the last commit
+# can be dangerous, because any local change you made to that file is gone
+git checkout -- file_name_to_unmodify.txt
+git restore file_name_to_unstage.txt
+
+```
+
+Anything that is committed in Git can almost always be recovered. Even commits that were on branches that were deleted or commits that were overwritten with an --amend commit can be recovered. However, anything you lose that was never committed is likely never to be seen again.
 
 ## 2.5 Working with Remotes
 
