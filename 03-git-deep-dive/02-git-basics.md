@@ -191,8 +191,35 @@ git restore file_name_to_unstage.txt
 Anything that is committed in Git can almost always be recovered. Even commits that were on branches that were deleted or commits that were overwritten with an --amend commit can be recovered. However, anything you lose that was never committed is likely never to be seen again.
 
 ## 2.5 Working with Remotes
+Remote repositories are versions of your project that are hosted on the Internet or network somewhere.
 
+```sh
+# to see which remote servers you have configured (origin is the default name)
+git remote
 
+# shows the URLs of the remote
+git remote -v
+
+# add a new remote
+git remote add my-remote-short-name my-remote-url
+
+# fetch from remote
+# it only downloads the data to your local repository, so
+# you have to merge it manually into your work when you're ready.
+git fetch my-remote-short-name
+
+# automatically fetch and then merge the remote branch into your current branch
+git pull
+
+# push to remote
+git push my-remote-short-name my-branch-name
+# git push origin master
+
+# inspecting a remote
+git remote show mmy-remote-short-name
+# git remotes show origin
+
+```
 
 ## 2.6 Tagging
 
