@@ -224,12 +224,26 @@ git remote show mmy-remote-short-name
 ## 2.6 Tagging
 Git has the ability to tag specific points in a repository's history as being important. Typically, people use this functionality to mark release points (v1.0, v2.0 and so on).
 
+A lightweight tag is a pointer to a specific commit.
+
+Annotated tags are stored as full objects in the Git database. They're checksummed; contain the tagger name, email, and date; have a tagging message; and can be signed and verified with GNU Privacy Guard (GPG). It's generally recommended that you create annotated tags so you can have all this info.
+
+You can tag an old commit. 
+
+By default, the git push command doesn't transfer tags to remote servers. You will have to explicitly push tags to a shared server after you have created them. 
+
 ```sh
 # list the existing tags, in alphabetical order
 git tag
 
 # list the tags using wildcard match
 $ git tag -l "v1.8.5*"
+
+# create an annotated tag
+$ git tag -a v1.4 -m "my version 1.4"
+
+# create a lightweight tag
+$ git tag v1.4-lw
 
 ```
 
