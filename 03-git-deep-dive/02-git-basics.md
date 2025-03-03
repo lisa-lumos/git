@@ -248,12 +248,7 @@ $ git tag v1.4-lw
 ```
 
 ## 2.7 Git Aliases
-
-
+skip.
 
 ## 2.8 Summary
-
-
-
-
-
+skip
