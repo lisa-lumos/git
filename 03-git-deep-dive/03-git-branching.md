@@ -6,7 +6,7 @@ The way Git branches is incredibly lightweight, making branching operations near
 
 Unlike many other VCSs, Git encourages workflows that branch and merge often, even multiple times in a day.
 
-
+The 'master' branch in Git is not a special branch. It is exactly like any other branch. The only reason nearly every repository has one is that the git init command creates it by default and most people don't bother to change it.
 
 ## 3.2 Basic Branching and Merging
 
