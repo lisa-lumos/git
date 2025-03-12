@@ -21,8 +21,34 @@ git switch -c my-new-branch
 ```
 
 ## 3.2 Basic Branching and Merging
+An example:
+```sh
+$ git checkout -b iss53
+# Switched to a new branch "iss53"
+
+$ vim index.html
+git commit -a -m 'Create new footer [issue 53]'
+
+$ git checkout master
+# Switched to branch 'master'
+
+$ git checkout -b hotfix
+# Switched to a new branch 'hotfix'
+
+$ vim index.html
+
+$ git commit -a -m 'Fix broken email address'
+# [hotfix 1fb7853] Fix broken email address
+#  1 file changed, 2 insertions(+)
+
+$ git checkout master
+
+$ git merge hotfix
+# merge the hotfix branch back into your master branch
+# when the branch you're merging into is an ancestor of the branch you're merging from - this is called a "fast-forward".
 
 
+```
 
 ## 3.3 Branch Management
 
