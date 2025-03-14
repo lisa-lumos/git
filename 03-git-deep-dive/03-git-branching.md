@@ -47,6 +47,31 @@ $ git merge hotfix
 # merge the hotfix branch back into your master branch
 # when the branch you're merging into is an ancestor of the branch you're merging from - this is called a "fast-forward".
 
+$ git checkout iss53
+# Switched to branch "iss53"
+
+$ vim index.html
+$ git commit -a -m 'Finish the new footer [issue 53]'
+# [iss53 ad82d7a] Finish the new footer [issue 53]
+# 1 file changed, 1 insertion(+)
+
+$ git checkout master
+# Switched to branch 'master'
+$ git merge iss53 # basic merging
+# Merge made by the 'recursive' strategy.
+# index.html |    1 +
+# 1 file changed, 1 insertion(+)
+
+# If you changed the same part of the same file differently in the two branches you're merging, Git won't be able to merge them cleanly.
+$ git merge iss53
+# Auto-merging index.html
+# CONFLICT (content): Merge conflict in index.html
+# Automatic merge failed; fix conflicts and then commit the result.
+
+# To see which files are unmerged at any point after a merge conflict
+$ git status
+
+# Git adds standard conflict-resolution markers to the files that have conflicts, # so you can open them manually and resolve those conflicts.
 
 ```
 
