@@ -76,7 +76,21 @@ $ git status
 ```
 
 ## 3.3 Branch Management
+```sh
+# list of branches, * prefix shows current branch
+$ git branch
 
+# show last commit on each branch
+$ git branch -v
+
+# branches merged into cur branch:
+$ git branch --merged
+
+# opposite
+$ git branch --no-merged
+
+
+```
 
 
 ## 3.4 Branching Workflows
