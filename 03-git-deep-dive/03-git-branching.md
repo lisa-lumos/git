@@ -89,6 +89,10 @@ $ git branch --merged
 # opposite
 $ git branch --no-merged
 
+# rename a branch, and push it to remote, and del old branch
+$ git branch --move old-branch-name new-branch-name
+$ git push --set-upstream origin new-branch-name
+$ git push origin --delete old-branch-name
 
 ```
 
