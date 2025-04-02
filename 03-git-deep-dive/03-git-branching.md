@@ -100,8 +100,7 @@ $ git push origin --delete old-branch-name
 Topic branches are useful in projects of any size. A topic branch is a short-lived branch that you create and use for a single particular feature or related work. 
 
 ## 3.5 Remote Branches
-
-
+skip.
 
 ## 3.6 Rebasing
 
