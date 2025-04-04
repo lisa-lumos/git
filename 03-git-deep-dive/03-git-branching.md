@@ -103,42 +103,7 @@ Topic branches are useful in projects of any size. A topic branch is a short-liv
 skip.
 
 ## 3.6 Rebasing
-
-
+In Git, there are two main ways to integrate changes from one branch into another: the `merge` and the `rebase`.
 
 ## 3.7 Summary
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+skip
